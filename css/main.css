@@ -15,10 +15,15 @@ body {
 
 .banner {
   background-color: #2b3851;
+  text-align: center;
 }
 
 .robot {
+    transition: (-50%, -50%);
   width: 320px;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 3rem;
 }
 
 .robot-body {
@@ -27,9 +32,33 @@ body {
 
 .robot-brain {
   width: 46px;
+  position: absolute;
+  left: 137px;
+  top: 50px;
 }
 
 .robot-head-right,
 .robot-head-left {
   width: 125px;
+  position: absolute;
+}
+
+.robot-head-right {
+  left: 50%;
+  top: 10px;
+}
+
+.robot-head-left {
+  left: 35px;
+  top: 10px;
+}
+
+.robot:hover .robot-head-left {
+  left: 10px;
+  top: 10px;
+}
+
+.robot:hover .robot-head-right {
+  left: 55%;
+  top: 10px;
 }
