@@ -19,7 +19,6 @@ body {
 }
 
 .robot {
-    transition: (-50%, -50%);
   width: 320px;
   position: relative;
   margin: 0 auto;
@@ -55,10 +54,15 @@ body {
 
 .robot:hover .robot-head-left {
   left: 10px;
-  top: 10px;
+  top: 5px;
 }
 
 .robot:hover .robot-head-right {
   left: 55%;
-  top: 10px;
+  top: 5px;
+}
+
+.robot:hover .robot-brain {
+  left: 137px;
+  top: 40px;
 }
